@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.factorytest"
+    android:targetSandboxVersion="2"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="14" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.android.factorytest.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.android.factorytest.TestColor" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestSd" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestCamera" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestWiFi" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestTouch" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestBluetooth" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestAudioVideo" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestRecord" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestGpio" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestFingerprint" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestGsensor" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestFpFlash" >
+        </activity>
+        <activity android:name="com.android.factorytest.TestUart" >
+        </activity>
+        <activity android:name="com.android.factorytest.SerialPortSet" >
+        </activity>
+        <activity
+            android:name="com.android.factorytest.TestFlash"
+            android:label="@string/title_activity_test_flash" >
+        </activity>
+    </application>
+
+</manifest>

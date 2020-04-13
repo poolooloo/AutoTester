@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <string name="EnterTest">进入测试</string>
+    <string name="action_settings">配置</string>
+    <string name="app_name">工厂测试</string>
+    <string name="autosend">开始自动发送</string>
+    <string name="autostop">停止自动发送</string>
+    <string name="baudrate">波特率</string>
+    <string name="bt_alarm_down">按钮状态:按下</string>
+    <string name="bt_alarm_up">按钮状态:松开</string>
+    <string name="but_bluetooth_close">关闭Bluetooth</string>
+    <string name="but_bluetooth_open">打开Bluetooth</string>
+    <string name="but_camera_exit">关闭摄像</string>
+    <string name="but_camera_open">打开摄像</string>
+    <string name="but_camera_record">打开录像</string>
+    <string name="but_camera_torch_off">闪光灯关</string>
+    <string name="but_camera_torch_on">闪光灯开</string>
+    <string name="but_changecolor">改变颜色</string>
+    <string name="but_exit">退出</string>
+    <string name="but_next">下一项测试</string>
+    <string name="but_retest">重测本项</string>
+    <string name="but_return">返回菜单</string>
+    <string name="but_test_bluetooth">Bluetooth测试</string>
+    <string name="but_test_camera">Camera测试</string>
+    <string name="but_test_color">LCD测试</string>
+    <string name="but_test_sd">存储测试</string>
+    <string name="but_test_wifi">网络测试</string>
+    <string name="but_wifi_close">关闭WiFi</string>
+    <string name="but_wifi_open">打开WiFi</string>
+    <string name="charsend">字符发送</string>
+    <string name="error_configuration" translatable="false">Please configure your serial port first.</string>
+    <string name="error_security">You do not have read/write permission to the serial
+                port.</string>
+    <string name="error_unknown">The serial port can not be opened for an unknown
+                reason.</string>
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="hexsend">16进制发送</string>
+    <string name="inputdata">输入字符</string>
+    <string name="inputhexdata">输入16进制数据</string>
+    <string name="music">音乐</string>
+    <string name="ok">确定</string>
+    <string name="pause">暂停</string>
+    <string name="recvdata">接收字符</string>
+    <string name="serialpatch">串口路径</string>
+    <string name="sound">声音</string>
+    <string name="start">开始</string>
+    <string name="test_485">测试485</string>
+    <string name="test_4G_state">4G状态</string>
+    <string name="test_AudioVideo">测试音视频</string>
+    <string name="test_Fingerprint">CAN测试</string>
+    <string name="test_FpFlash">未使用</string>
+    <string name="test_Gsensor">未使用</string>
+    <string name="test_Record">测试录音</string>
+    <string name="test_Uart">测试串口</string>
+    <string name="test_avresult_failed">失败</string>
+    <string name="test_avresult_name">音视频</string>
+    <string name="test_avresult_none">未测试</string>
+    <string name="test_avresult_ok">成功</string>
+    <string name="test_bluetooth_mess">请点击“打开Bluetooth/关闭Bluetooth”，是否有正确的Bluetooth信息！</string>
+    <string name="test_bluetooth_mess_error">未知的Bluetooth状态！</string>
+    <string name="test_bluetooth_mess_state_changed">Bluetooth状态改变！</string>
+    <string name="test_btresult_failed">失败</string>
+    <string name="test_btresult_name">蓝牙</string>
+    <string name="test_btresult_none">未测试</string>
+    <string name="test_btresult_ok">成功</string>
+    <string name="test_camera_mess">请点击“打开Camera”，测试Camera是否正常！</string>
+    <string name="test_cameraresult_failed">失败</string>
+    <string name="test_cameraresult_name">Camera</string>
+    <string name="test_cameraresult_none">未测试</string>
+    <string name="test_cameraresult_ok">成功</string>
+    <string name="test_can">测试CAN</string>
+    <string name="test_color_mess">请点击“改变颜色”，显示是否正常！</string>
+    <string name="test_colorresult_failed">失败</string>
+    <string name="test_colorresult_name">LCD</string>
+    <string name="test_colorresult_none">未测试</string>
+    <string name="test_colorresult_ok">成功</string>
+    <string name="test_eth_state">以太网状态</string>
+    <string name="test_exio_mess">点击各个按钮测试扩展IO拉高拉低！</string>
+    <string name="test_fpflash_name">采集仪FLASH</string>
+    <string name="test_fpresult_failed">失败</string>
+    <string name="test_fpresult_name">指纹</string>
+    <string name="test_fpresult_none">未测试</string>
+    <string name="test_fpresult_ok">成功</string>
+    <string name="test_gfpflashresult_failed">失败</string>
+    <string name="test_gfpflashresult_none">未测试</string>
+    <string name="test_gfpflashresult_ok">成功</string>
+    <string name="test_gpioresult_failed">失败</string>
+    <string name="test_gpioresult_name">GPIO</string>
+    <string name="test_gpioresult_none">未测试</string>
+    <string name="test_gpioresult_ok">成功</string>
+    <string name="test_gsensorresult_failed">失败</string>
+    <string name="test_gsensorresult_name">Gsensor</string>
+    <string name="test_gsensorresult_none">未测试</string>
+    <string name="test_gsensorresult_ok">成功</string>
+    <string name="test_pin">测试GPIO</string>
+    <string name="test_pin_mess">点击各个按钮测试GPIO拉高拉低！</string>
+    <string name="test_project">测试项</string>
+    <string name="test_recordresult_failed">失败</string>
+    <string name="test_recordresult_name">录音</string>
+    <string name="test_recordresult_none">未测试</string>
+    <string name="test_recordresult_ok">成功</string>
+    <string name="test_result">测试结果</string>
+    <string name="test_result_none">未测试</string>
+    <string name="test_sd_mess1">SD卡已经插入！</string>
+    <string name="test_sd_mess2">SD卡已经拔出！</string>
+    <string name="test_sd_mess3">在SD卡中创建文件成功！</string>
+    <string name="test_sd_mess4">从SD卡中删除文件成功！</string>
+    <string name="test_sd_mess5">在SD卡中创建文件失败！</string>
+    <string name="test_sd_mess6">从SD卡中删除文件失败！</string>
+    <string name="test_sdresult_failed">失败</string>
+    <string name="test_sdresult_name">存储</string>
+    <string name="test_sdresult_none">未测试</string>
+    <string name="test_sdresult_ok">成功</string>
+    <string name="test_touch">测试触摸屏</string>
+    <string name="test_touchresult_failed">失败</string>
+    <string name="test_touchresult_name">触摸屏</string>
+    <string name="test_touchresult_none">未测试</string>
+    <string name="test_touchresult_ok">成功</string>
+    <string name="test_ttyS1">此处测试ttyS1:</string>
+    <string name="test_ttyS3">此处测试ttyS3:</string>
+    <string name="test_ttyS4">此处测试ttyS4:</string>
+    <string name="test_uart_name">串口</string>
+    <string name="test_uartresult_failed">失败</string>
+    <string name="test_uartresult_none">未测试</string>
+    <string name="test_uartresult_ok">成功</string>
+    <string name="test_usb_mess1">U盘已经插入！</string>
+    <string name="test_usb_mess2">U盘已经拔出！</string>
+    <string name="test_usb_mess3">在U盘中创建文件成功！</string>
+    <string name="test_usb_mess4">从U盘中删除文件成功！</string>
+    <string name="test_usb_mess5">在U盘中创建文件失败！</string>
+    <string name="test_usb_mess6">从U盘中删除文件失败！</string>
+    <string name="test_wifi_mess">请点击各个按钮,打开或关闭WIFI/以太网/4G的功能,测试过程中关闭非测试项的功能！</string>
+    <string name="test_wifi_mess_disable">WiFi关闭成功！</string>
+    <string name="test_wifi_mess_enable">WiFi打开成功！</string>
+    <string name="test_wifi_mess_enter_wifisetting">进入WiFi设置界面</string>
+    <string name="test_wifi_mess_error">未知的WiFi状态！</string>
+    <string name="test_wifi_mess_state_changed">WiFi状态改变！</string>
+    <string name="test_wifi_state">WIFI状态</string>
+    <string name="test_wifiresult_failed">失败</string>
+    <string name="test_wifiresult_name">网络</string>
+    <string name="test_wifiresult_none">未测试</string>
+    <string name="test_wifiresult_ok">成功</string>
+    <string name="title_activity_test_flash">TestFlash</string>
+    <string name="video">视频</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

@@ -1,0 +1,151 @@
+-- Merging decision tree log ---
+manifest
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:1-72:12
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:1-72:12
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:1-72:12
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:1-72:12
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:1-72:12
+	package
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:3:5-38
+	android:versionName
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:5:5-30
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+	xmlns:android
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:4:5-28
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:11:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:12:5-76
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:12:22-73
+uses-permission#android.permission.BLUETOOTH
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:13:5-68
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:13:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:14:5-74
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:14:22-71
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:15:5-74
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:15:22-72
+uses-permission#android.permission.BROADCAST_STICKY
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:16:5-75
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:16:22-72
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:18:5-87
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:18:22-68
+application
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:24:5-70:19
+	android:label
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:27:9-41
+	android:icon
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:26:9-45
+	android:allowBackup
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:25:9-35
+	android:theme
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:28:9-40
+activity#com.android.factorytest.MainActivity
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:29:9-37:20
+	android:label
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:31:13-45
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:30:13-41
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:32:13-36:29
+action#android.intent.action.MAIN
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:33:17-69
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:33:25-66
+category#android.intent.category.LAUNCHER
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:35:17-77
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:35:27-74
+activity#com.android.factorytest.TestColor
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:38:9-39:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:38:19-44
+activity#com.android.factorytest.TestSd
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:40:9-41:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:40:19-41
+activity#com.android.factorytest.TestCamera
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:42:9-43:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:42:19-45
+activity#com.android.factorytest.TestWiFi
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:44:9-45:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:44:19-43
+activity#com.android.factorytest.TestTouch
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:46:9-47:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:46:19-44
+activity#com.android.factorytest.TestBluetooth
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:48:9-49:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:48:19-48
+activity#com.android.factorytest.TestAudioVideo
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:50:9-51:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:50:19-49
+activity#com.android.factorytest.TestRecord
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:52:9-53:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:52:19-45
+activity#com.android.factorytest.TestGpio
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:54:9-55:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:54:19-43
+activity#com.android.factorytest.TestFingerprint
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:56:9-57:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:56:19-50
+activity#com.android.factorytest.TestGsensor
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:58:11-59:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:58:21-48
+activity#com.android.factorytest.TestFpFlash
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:60:11-61:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:60:21-48
+activity#com.android.factorytest.TestUart
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:62:11-63:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:62:21-45
+activity#com.android.factorytest.SerialPortSet
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:64:9-65:20
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:64:19-48
+activity#com.android.factorytest.TestFlash
+ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:66:9-69:20
+	android:label
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:68:13-62
+	android:name
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:67:13-38
+uses-sdk
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+		ADDED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+		INJECTED from F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml

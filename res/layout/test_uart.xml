@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/EditTextReception1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="@string/recvdata"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="insideOverlay"
+            android:textSize="12sp">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextReception2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="@string/recvdata"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="insideOverlay"
+            android:textSize="12sp">
+        </EditText>
+        <EditText
+            android:id="@+id/EditTextReception3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:hint="@string/recvdata"
+            android:isScrollContainer="true"
+            android:scrollbarStyle="insideOverlay"
+            android:textSize="12sp">
+        </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_ttyS4"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/EditTextEmission1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:textSize="12sp">
+                <Button
+                    android:id="@+id/okbt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charsend"
+                    android:textSize="8sp">
+
+                </Button>
+
+                <Button
+                    android:id="@+id/btauto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autosend"
+                    android:textSize="8sp">
+
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/txCount1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/rxCount1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="12sp">
+            </EditText>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_ttyS1"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/EditTextEmission2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/okbt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charsend"
+                    android:textSize="8sp">
+                </Button>
+                <Button
+                    android:id="@+id/btauto2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autosend"
+                    android:textSize="8sp">
+
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/txCount2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/rxCount2"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="12sp">
+            </EditText>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/test_ttyS1"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/EditTextEmission3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/okbt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/charsend"
+                    android:textSize="8sp">
+                </Button>
+                <Button
+                    android:id="@+id/btauto3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/autosend"
+                    android:textSize="8sp">
+
+                </Button>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/txCount3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="8sp"></EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="接收字符数:"
+                android:textSize="8sp" />
+
+            <EditText
+                android:id="@+id/rxCount3"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/inputdata"
+                android:lines="1"
+                android:textSize="12sp">
+            </EditText>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/but_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="@string/but_return"
+            android:textSize="8sp" />
+    </RelativeLayout>
+</LinearLayout>

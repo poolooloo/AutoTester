@@ -1,0 +1,136 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.android.factorytest"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk android:minSdkVersion="14" />
+7-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml
+8
+9    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+9-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:7:5-80
+9-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:7:22-77
+10    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+10-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:5-81
+10-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:22-78
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+11-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:5-81
+11-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:8:22-78
+12    </uses-permission>
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:11:5-76
+13-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:11:22-73
+14    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+14-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:12:5-76
+14-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:12:22-73
+15    <uses-permission android:name="android.permission.BLUETOOTH" />
+15-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:13:5-68
+15-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:13:22-65
+16    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+16-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:14:5-74
+16-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:14:22-71
+17    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+17-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:15:5-74
+17-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:15:22-72
+18    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+18-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:16:5-75
+18-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:16:22-72
+19    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+19-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:18:5-87
+19-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:18:22-68
+20
+21    <application
+21-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:24:5-70:19
+22        android:allowBackup="true"
+22-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:25:9-35
+23        android:debuggable="true"
+24        android:icon="@drawable/ic_launcher"
+24-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:26:9-45
+25        android:label="@string/app_name"
+25-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:27:9-41
+26        android:testOnly="true"
+27        android:theme="@style/AppTheme" >
+27-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:28:9-40
+28        <activity
+28-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:29:9-37:20
+29            android:name="com.android.factorytest.MainActivity"
+29-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:30:13-41
+30            android:label="@string/app_name" >
+30-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:31:13-45
+31            <intent-filter>
+31-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:32:13-36:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:33:17-69
+32-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:33:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:35:17-77
+34-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:35:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.android.factorytest.TestColor" >
+37-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:38:9-39:20
+37-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:38:19-44
+38        </activity>
+39        <activity android:name="com.android.factorytest.TestSd" >
+39-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:40:9-41:20
+39-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:40:19-41
+40        </activity>
+41        <activity android:name="com.android.factorytest.TestCamera" >
+41-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:42:9-43:20
+41-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:42:19-45
+42        </activity>
+43        <activity android:name="com.android.factorytest.TestWiFi" >
+43-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:44:9-45:20
+43-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:44:19-43
+44        </activity>
+45        <activity android:name="com.android.factorytest.TestTouch" >
+45-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:46:9-47:20
+45-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:46:19-44
+46        </activity>
+47        <activity android:name="com.android.factorytest.TestBluetooth" >
+47-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:48:9-49:20
+47-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:48:19-48
+48        </activity>
+49        <activity android:name="com.android.factorytest.TestAudioVideo" >
+49-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:50:9-51:20
+49-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:50:19-49
+50        </activity>
+51        <activity android:name="com.android.factorytest.TestRecord" >
+51-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:52:9-53:20
+51-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:52:19-45
+52        </activity>
+53        <activity android:name="com.android.factorytest.TestGpio" >
+53-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:54:9-55:20
+53-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:54:19-43
+54        </activity>
+55        <activity android:name="com.android.factorytest.TestFingerprint" >
+55-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:56:9-57:20
+55-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:56:19-50
+56        </activity>
+57        <activity android:name="com.android.factorytest.TestGsensor" >
+57-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:58:11-59:20
+57-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:58:21-48
+58        </activity>
+59        <activity android:name="com.android.factorytest.TestFpFlash" >
+59-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:60:11-61:20
+59-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:60:21-48
+60        </activity>
+61        <activity android:name="com.android.factorytest.TestUart" >
+61-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:62:11-63:20
+61-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:62:21-45
+62        </activity>
+63        <activity android:name="com.android.factorytest.SerialPortSet" >
+63-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:64:9-65:20
+63-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:64:19-48
+64        </activity>
+65        <activity
+65-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:66:9-69:20
+66            android:name="com.android.factorytest.TestFlash"
+66-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:67:13-38
+67            android:label="@string/title_activity_test_flash" >
+67-->F:\AndroidStudioProjects\PX30\factorytest-PX30-Android8.1\AndroidManifest.xml:68:13-62
+68        </activity>
+69    </application>
+70
+71</manifest>

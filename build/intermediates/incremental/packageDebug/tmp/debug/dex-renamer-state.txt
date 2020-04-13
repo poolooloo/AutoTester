@@ -1,0 +1,4 @@
+#Mon Apr 13 09:53:20 CST 2020
+base.0=F\:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
