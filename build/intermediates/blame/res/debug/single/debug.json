@@ -1,126 +1,142 @@
 [
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_audiovideo.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_audiovideo.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_activity_test_flash.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\activity_test_flash.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_fingerprint.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_fingerprint.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_audiovideo.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_audiovideo.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\activity_main.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\raw_wow.mp4.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\raw\\wow.mp4"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_fpflash.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_fpflash.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_camera.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_camera.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_wifi.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_wifi.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blank_k.jpg.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\blank_k.jpg"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_sd.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_sd.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit_focus.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\bg_edit_focus.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_fpflash.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_fpflash.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_exio.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_exio.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_uart.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_uart.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blak_green.png.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\blak_green.png"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blak_green.png.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\blak_green.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\raw_wow.mp4.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\raw\\wow.mp4"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_color.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_color.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\menu\\main.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\menu_main.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\menu\\main.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit_normal.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\bg_edit_normal.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_fingerprint.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_fingerprint.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_pin.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_pin.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_gsensor.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_gsensor.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\bg_edit.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blak007.png.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\blak007.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_bluetooth.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_bluetooth.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit_normal.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\bg_edit_normal.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\raw_sound2.aac.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\raw\\sound2.aac"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_gsensor.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_gsensor.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\activity_home.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_uart.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_uart.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\bg_edit.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\menu_test_flash.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\menu\\test_flash.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_serialset.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\serialset.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_activity_test_flash.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\activity_test_flash.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_color.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_color.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-finger_bk.jpg.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-finger\\bk.jpg"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\raw_sound.mid.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\raw\\sound.mid"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_bg_edit_focus.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-hdpi\\bg_edit_focus.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\raw_test.mp3.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\raw\\test.mp3"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_exio.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_exio.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\raw_sound2.aac.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\raw\\sound2.aac"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\raw_sound.mid.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\raw\\sound.mid"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blak007.png.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\blak007.png"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_record.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_record.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_serialset.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\serialset.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\raw_test.mp3.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\raw\\test.mp3"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_record.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_record.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_bluetooth.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_bluetooth.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\layout_test_camera.xml.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\layout\\test_camera.xml"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_wifi.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_wifi.xml"
     },
     {
-        "merged": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_blank_k.jpg.flat",
-        "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\drawable-hdpi\\blank_k.jpg"
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_activity_json_creator.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\activity_json_creator.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\drawable-finger_bk1.jpg.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\drawable-finger\\bk1.jpg"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\menu_test_flash.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\menu\\test_flash.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_pin.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_pin.xml"
+    },
+    {
+        "merged": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\res\\merged\\debug\\layout_test_sd.xml.flat",
+        "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\layout\\test_sd.xml"
     }
 ]

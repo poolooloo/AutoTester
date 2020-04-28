@@ -1,4 +1,0 @@
-#Mon Sep 16 11:15:43 CST 2019
-base.0=E\:\\work\\Android\\workplace\\factorytest-PX30-Android8.1\\build\\intermediates\\transforms\\dexMerger\\debug\\10
-path.0=classes.dex
-renamed.0=classes.dex

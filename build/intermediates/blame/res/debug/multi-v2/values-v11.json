@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+            "outputFile": "F:\\AndroidStudioProjects\\AutoTester\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
             "map": [
                 {
-                    "source": "F:\\AndroidStudioProjects\\PX30\\factorytest-PX30-Android8.1\\res\\values-v11\\styles.xml",
+                    "source": "F:\\AndroidStudioProjects\\AutoTester\\res\\values-v11\\styles.xml",
                     "from": {
                         "startLines": "6",
                         "startColumns": "4",

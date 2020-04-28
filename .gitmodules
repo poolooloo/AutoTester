@@ -1,0 +1,3 @@
+[submodule "HeiPermission"]
+	path = HeiPermission
+	url = https://github.com/poolooloo/HeiPermission.git

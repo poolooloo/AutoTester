@@ -1,14 +1,17 @@
 package com.android.factorytest;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import java.io.FileWriter;
 import java.io.OutputStreamWriter;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
+import android.content.pm.PackageManager;
 import android.os.Build;
 
 import java.io.IOException;
+import java.io.StringReader;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -19,30 +22,39 @@ import jxl.write.WritableSheet;
 import jxl.write.WritableWorkbook;
 import jxl.write.WriteException;
 import jxl.write.biff.RowsExceededException;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
+
+import com.alibaba.fastjson.JSON;
+//import com.google.gson.Gson;
+
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.select.Elements;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import jxl.Sheet;
-import jxl.Workbook;
 import jxl.read.biff.BiffException;
-import jxl.write.Label;
-import jxl.write.WritableSheet;
-import jxl.write.WritableWorkbook;
-import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
 import jxl.Cell;
-public class MainActivity extends Activity
-{
+
+//import hei.permission.PermissionActivity;
+
+public class MainActivity extends Activity {
     Build bd = new Build();
     String model = bd.MODEL;
 
@@ -62,7 +74,7 @@ public class MainActivity extends Activity
     private Button mTestFpFlash = null;
     private Button mExporttxt = null;
     private Button mExit = null;
-    private Button mTestUart= null;
+    private Button mTestUart = null;
 
     private TextView mTestLcdtxt = null;
     private TextView mTestsdtxt = null;
@@ -87,19 +99,19 @@ public class MainActivity extends Activity
 
     private int requestCode = 0;
 
-    private static  Boolean mlcdresult = false;
-    private static  Boolean msdresult = false;
-    private static  Boolean mcameraresult = false;
-    private static  Boolean mwifiresult = false;
-    private static  Boolean mbtresult = false;
-    private static  Boolean mtouchresult = false;
-    private static  Boolean mgpioresult = false;
-    private static  Boolean mavresult = false;
-    private static  Boolean mrecordresult = false;
-    private static  Boolean mfpresult = false;
-    private static  Boolean mgsensorresult = false;
-    private static  Boolean mgfpflashresult = false;
-    private static  Boolean muartresult = false;
+    private static Boolean mlcdresult = false;
+    private static Boolean msdresult = false;
+    private static Boolean mcameraresult = false;
+    private static Boolean mwifiresult = false;
+    private static Boolean mbtresult = false;
+    private static Boolean mtouchresult = false;
+    private static Boolean mgpioresult = false;
+    private static Boolean mavresult = false;
+    private static Boolean mrecordresult = false;
+    private static Boolean mfpresult = false;
+    private static Boolean mgsensorresult = false;
+    private static Boolean mgfpflashresult = false;
+    private static Boolean muartresult = false;
 
     private static final int mlcd = 1;
     private static final int msd = 2;
@@ -129,13 +141,16 @@ public class MainActivity extends Activity
 //	private static  String mstrgsensorresult = "noused";
 //	private static  String mstrfpflashresult = "notused";
 
-    private static  String mstrarrayresult[] = new String[13];
-    private static  String mstrarrayname[] = new String[13];
+    private static String mstrarrayresult[] = new String[13];
+    private static String mstrarrayname[] = new String[13];
     private static String ResultFile = "/sdcard/testresult.xls";
+
     static {
         System.loadLibrary("factorytest");
     }
+
     public native int ReadAdc();
+
     private final int WC = ViewGroup.LayoutParams.WRAP_CONTENT;
     private final int FP = ViewGroup.LayoutParams.FILL_PARENT;
 
@@ -143,31 +158,123 @@ public class MainActivity extends Activity
 
     /** Called when the activity is first created. */
     @Override
-    public void onCreate(Bundle savedInstanceState)
-    {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+//        getWindow().requestFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
-//        showstate();
-//        initText();
+        showstate();
+        initText();
         initButton();
-//        checkfile();
-//        try {
-//            initanything();
-//        } catch (RowsExceededException e) {
-//            // TODO 自动生成的 catch 块
-//            e.printStackTrace();
-//        } catch (WriteException e) {
-//            // TODO 自动生成的 catch 块
-//            e.printStackTrace();
-//        }
-
+        checkfile();
+        try {
+            initanything();
+        } catch (RowsExceededException e) {
+            // TODO 自动生成的 catch 块
+            e.printStackTrace();
+        } catch (WriteException e) {
+            // TODO 自动生成的 catch 块
+            e.printStackTrace();
+        }
 
 
     }
-    public void showstate()
-    {
-        TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        StringBuilder sb = new StringBuilder();
+
+    //解析HTML文件
+    public void parseHtml() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Document doc = Jsoup.connect("http://home.meishichina.com/show-top-type-recipe.html").get();
+                    Elements titleAndPic = doc.select("div.pic");
+                    Log.i("mytag", "title:" + titleAndPic.get(1).select("a").attr("title") + "pic:" + titleAndPic.get(1).select("a").select("img").attr("data-src"));
+                    Elements url = doc.select("div.detail").select("a");
+                    Log.i("mytag：", "url:" + url.get(1).attr("href"));
+                    Elements burden = doc.select("p.subcontent");
+                    Log.i("mytag:", "burden:" + burden.get(1).text());
+
+                } catch (Exception e) {
+                    Log.i("mytag:", e.toString());
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
+
+    //解析json文件
+    public void parseJson() {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                String jsonString = "{\"id\":0,\"name\":\"admin\",\"users\":[{\"id\":2,\"name\":\"guest\"},{\"id\":3,\"name\":\"root\"}]}";
+                JsonInfoGroup group = JSON.parseObject(jsonString, JsonInfoGroup.class);
+
+            }
+        });
+    }
+
+    public void parseXmlWithPull(final String result) {
+        runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    XmlPullParserFactory factory = XmlPullParserFactory.newInstance();
+                    XmlPullParser parser = factory.newPullParser();
+                    parser.setInput(new StringReader(result));
+
+                    String id = "";
+                    String name = "";
+
+                    int eventType = parser.getEventType();
+                    while (eventType != XmlPullParser.END_DOCUMENT) {
+                        String nodeName = parser.getName();
+                        Log.d(TAG, "nodeName:" + nodeName);
+                        switch (eventType) {
+                            case XmlPullParser.START_TAG:
+                                if ("country".equals(nodeName)) {
+                                    id = parser.getAttributeValue(null, "id");
+                                    name = parser.getAttributeValue(null, "name");
+                                }
+                                break;
+                            case XmlPullParser.END_TAG:
+                                if ("country".equals(nodeName)) {
+                                    Log.i(TAG, "id" + id);
+                                    Log.i(TAG, "name" + name);
+                                }
+                                break;
+                            default:
+                                break;
+                        }
+                        eventType = parser.next();
+                    }
+
+                } catch (XmlPullParserException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+    }
+
+    //    @SuppressLint("MissingPermission")
+    public void showstate() {
+        final TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        final StringBuilder sb = new StringBuilder();
+
+        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    Activity#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for Activity#requestPermissions for more details.
+            return;
+        }
         sb.append("\nDeviceId(IMEI) = " + tm.getDeviceId());
         /*sb.append("\nDeviceSoftwareVersion = " + tm.getDeviceSoftwareVersion());
         sb.append("\nLine1Number = " + tm.getLine1Number());
@@ -183,25 +290,27 @@ public class MainActivity extends Activity
         sb.append("\nSimState = " + tm.getSimState());
         sb.append("\nSubscriberId(IMSI) = " + tm.getSubscriberId());
         sb.append("\nVoiceMailNumber = " + tm.getVoiceMailNumber());*/
-        sb.append("\nModel = " + android.os.Build.MODEL);
-        sb.append("\nBoard = " + android.os.Build.BOARD);
-        //sb.append("\nBootloader = " + android.os.Build.BOOTLOADER);
-        sb.append("\nBrand = " + android.os.Build.BRAND);
-        sb.append("\nDevice = " + android.os.Build.DEVICE);
-        sb.append("\nDisplay = " + android.os.Build.DISPLAY);
-        sb.append("\nFINGERPRINT = " + android.os.Build.FINGERPRINT);
-        sb.append("\nHARDWARE = " + android.os.Build.HARDWARE);
-        sb.append("\nHOST = " + android.os.Build.HOST);
-        sb.append("\nID = " + android.os.Build.ID);
-        sb.append("\nMANUFACTURER   = " + android.os.Build.MANUFACTURER  );
-        sb.append("\nPRODUCT = " + android.os.Build.PRODUCT);
-        sb.append("\nTAGS = " + android.os.Build.TAGS);
+            sb.append("\nModel = " + Build.MODEL);
+            sb.append("\nBoard = " + Build.BOARD);
+            //sb.append("\nBootloader = " + android.os.Build.BOOTLOADER);
+            sb.append("\nBrand = " + Build.BRAND);
+            sb.append("\nDevice = " + Build.DEVICE);
+            sb.append("\nDisplay = " + Build.DISPLAY);
+            sb.append("\nFINGERPRINT = " + Build.FINGERPRINT);
+            sb.append("\nHARDWARE = " + Build.HARDWARE);
+            sb.append("\nHOST = " + Build.HOST);
+            sb.append("\nID = " + Build.ID);
+            sb.append("\nMANUFACTURER   = " + Build.MANUFACTURER);
+            sb.append("\nPRODUCT = " + Build.PRODUCT);
+            sb.append("\nTAGS = " + Build.TAGS);
 //        sb.append("\nSERIAL = " + android.os.Build.SERIAL);
-        //sb.append("\nTIME  = " + android.os.Build. TIME );
-        sb.append("\nTYPE = " + android.os.Build.TYPE);
-        //sb.append("\nUSER = " + android.os.Build.USER);
-        //String mtype = android.os.Build.MODEL;
-        Log.e("info", sb.toString());
+            //sb.append("\nTIME  = " + android.os.Build. TIME );
+            sb.append("\nTYPE = " + Build.TYPE);
+            //sb.append("\nUSER = " + android.os.Build.USER);
+            //String mtype = android.os.Build.MODEL;
+            Log.e("info", sb.toString());
+        
+
     }
     public void checkfile()
     {
@@ -1123,5 +1232,7 @@ public class MainActivity extends Activity
 //                //startActivity(mIntent);
             }
         });
+       
     }
+        
 }

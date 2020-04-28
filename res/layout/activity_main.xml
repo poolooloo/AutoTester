@@ -2,12 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:orientation="horizontal" >
+    android:orientation="horizontal"
+	android:baselineAligned="false">
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="match_parent"
 		android:layout_weight="1"
-		android:orientation="horizontal">
+		android:orientation="horizontal"
+		android:baselineAligned="false">
 	<LinearLayout
 		android:layout_width="fill_parent"
 		android:layout_height="match_parent"
@@ -21,7 +23,7 @@
 			android:layout_marginTop="5dp"
 			android:layout_marginBottom="10dp"
 			android:text="@string/test_project"
-			android:textSize="15dp" />
+			android:textSize="15sp" />
 
 		<Button
 			android:id="@+id/test_color"
@@ -89,67 +91,67 @@
 
 
 	</LinearLayout>
-	<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="match_parent"
-		android:layout_weight="1"
-		android:orientation="vertical" >
 
-		<TextView android:id="@+id/testproject1"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:layout_marginBottom="10dp"
-			android:textSize="25dp"
-			/>
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/testproject1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:textSize="25dp" />
 
 
-		<Button
-			android:id="@+id/test_Record"
-			android:layout_width="150dp"
-			android:layout_height="40dp"
-			android:layout_marginBottom="3dp"
-			android:text="@string/test_Record"
-			 />
+			<Button
+				android:id="@+id/test_Record"
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="3dp"
+				android:text="@string/test_Record" />
 
-		<Button
-			android:id="@+id/test_Fingerprint"
-			android:layout_width="150dp"
-			android:layout_height="40dp"
-			android:layout_marginBottom="3dp"
-			android:text="@string/test_Fingerprint"
-			/>
+			<Button
+				android:id="@+id/test_Fingerprint"
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="3dp"
+				android:text="@string/test_Fingerprint" />
 
-		<Button
-			android:id="@+id/test_Gsensor"
-			android:layout_width="150dp"
-			android:layout_height="40dp"
-			android:layout_marginBottom="3dp"
-			android:text="@string/test_Gsensor"
-			/>
-		<Button
-			android:id="@+id/test_FpFlash"
-			android:layout_width="150dp"
-			android:layout_height="40dp"
-			android:layout_marginBottom="3dp"
-			android:text="@string/test_FpFlash"
-			/>
-		<Button
-			android:id="@+id/test_Uart"
-			android:layout_width="150dp"
-			android:layout_height="40dp"
-			android:layout_marginBottom="3dp"
-			android:text="@string/test_Uart"
-			/>
-		<TextView android:id="@+id/wordcount"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginTop="10dp"
-			android:layout_marginBottom="10dp"
-			android:textSize="15dp"
-			android:text="wordcount"
-			/>
-	</LinearLayout>
+			<Button
+				android:id="@+id/test_Gsensor"
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="3dp"
+				android:text="@string/test_Gsensor" />
+
+			<Button
+				android:id="@+id/test_FpFlash"
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="3dp"
+				android:text="@string/test_FpFlash" />
+
+			<Button
+				android:id="@+id/test_Uart"
+				android:layout_width="150dp"
+				android:layout_height="40dp"
+				android:layout_marginBottom="3dp"
+				android:text="@string/test_Uart" />
+
+			<TextView
+				android:id="@+id/wordcount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="10dp"
+				android:layout_marginBottom="10dp"
+				android:text="@string/wordcount"
+				android:textSize="15dp" />
+
+		</LinearLayout>
 	</LinearLayout>
 <LinearLayout 
 		android:orientation="vertical"
