@@ -1,22 +1,22 @@
 package com.android.factorytest;
 
 
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.Intent;
+import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.util.Log;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.security.InvalidParameterException;
+import androidx.appcompat.app.AlertDialog;
 
-import android.util.Log;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.DialogInterface.OnClickListener;
-import android.content.Intent;
-import android.os.Bundle;
-
-public abstract class SerialPortActivity extends Activity {
+public abstract class SerialPortActivity extends AppCompatActivity {
 	private static final String TAG = "factorytest";
 	//protected Application mApplication;
 	protected SerialPort mSerialPort1;
@@ -106,7 +106,7 @@ public abstract class SerialPortActivity extends Activity {
 	}
 
 	private void DisplayError(int resourceId) {
-		AlertDialog.Builder b = new AlertDialog.Builder(this);
+		AlertDialog.Builder b = new  AlertDialog.Builder(this);
 		b.setTitle("Error");
 		b.setMessage(resourceId);
 		b.setPositiveButton("OK", new OnClickListener() {

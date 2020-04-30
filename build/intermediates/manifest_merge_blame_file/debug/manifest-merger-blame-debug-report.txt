@@ -5,10 +5,10 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="23"
+8        android:minSdkVersion="19"
 8-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml
-9        android:targetSdkVersion="24" />
-9-->[com.android.support.constraint:constraint-layout:1.1.3] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\247f998e4bdaf38a6cc6f3ef395b6cd1\constraint-layout-1.1.3\AndroidManifest.xml:7:9-38
+9        android:targetSdkVersion="28" />
+9-->[androidx.appcompat:appcompat:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:22:9-38
 10
 11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 11-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:8:5-80
@@ -39,91 +39,96 @@
 19-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:16:22-68
 20
 21    <application
-21-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:18:5-55:19
+21-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:18:5-56:19
 22        android:allowBackup="true"
 22-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:19:9-35
-23        android:debuggable="true"
-24        android:icon="@drawable/ic_launcher"
-24-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:20:9-45
-25        android:label="@string/app_name"
-25-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:21:9-41
-26        android:testOnly="true"
-27        android:theme="@style/AppTheme" >
-27-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:22:9-40
-28        <activity android:name="com.android.factorytest.HomeActivity" >
-28-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:9-29:24
-28-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:13-41
-29            <intent-filter>
-29-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:25:13-28:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:17-69
-30-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:27:17-77
-32-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:27:27-74
-33            </intent-filter>
-34        </activity>
-35        <activity android:name="com.android.factorytest.JsonCreatorActivity" />
-35-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:30:9-57
-35-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:30:19-54
-36        <activity android:name="com.android.factorytest.MainActivity" >
-36-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:31:9-37:20
-36-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:13-41
-37
-38            <!-- android:label="@string/app_name" <intent-filter> -->
-39            <!-- <action android:name="android.intent.action.MAIN" /> -->
-40            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-41            <!-- </intent-filter> -->
-42        </activity>
-43        <activity android:name="com.android.factorytest.TestColor" />
-43-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:38:9-47
-43-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:38:19-44
-44        <activity android:name="com.android.factorytest.TestSd" />
-44-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:9-44
-44-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:19-41
-45        <activity android:name="com.android.factorytest.TestCamera" />
-45-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:9-48
-45-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:19-45
-46        <activity android:name="com.android.factorytest.TestWiFi" />
-46-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:9-46
-46-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:19-43
-47        <activity android:name="com.android.factorytest.TestTouch" />
-47-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:9-47
-47-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:19-44
-48        <activity android:name="com.android.factorytest.TestBluetooth" />
-48-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:9-51
-48-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:19-48
-49        <activity android:name="com.android.factorytest.TestAudioVideo" />
-49-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:9-52
-49-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:19-49
-50        <activity android:name="com.android.factorytest.TestRecord" />
-50-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:9-48
-50-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:19-45
-51        <activity android:name="com.android.factorytest.TestGpio" />
-51-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:9-46
-51-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:19-43
-52        <activity android:name="com.android.factorytest.TestFingerprint" />
-52-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:9-53
-52-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:19-50
-53        <activity android:name="com.android.factorytest.TestGsensor" />
-53-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:9-49
-53-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:19-46
-54        <activity android:name="com.android.factorytest.TestFpFlash" />
-54-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:9-49
-54-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:19-46
-55        <activity android:name="com.android.factorytest.TestUart" />
-55-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:9-46
-55-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:19-43
-56        <activity android:name="com.android.factorytest.SerialPortSet" />
-56-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:9-51
-56-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:19-48
-57        <activity
-57-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:9-54:65
-58            android:name="com.android.factorytest.TestFlash"
-58-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:53:13-38
-59            android:label="@string/title_activity_test_flash" />
-59-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:54:13-62
-60    </application>
-61
-62</manifest>
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
+24        android:debuggable="true"
+25        android:icon="@drawable/ic_launcher"
+25-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:20:9-45
+26        android:label="@string/app_name"
+26-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:21:9-41
+27        android:testOnly="true"
+28        android:theme="@style/AppTheme" >
+28-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:22:9-40
+29        <activity android:name="com.android.factorytest.ResultActivity" />
+29-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:9-61
+29-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:19-49
+30        <activity android:name="com.android.factorytest.HomeActivity" >
+30-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:9-30:20
+30-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:19-47
+31            <intent-filter>
+31-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:25:13-29:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:17-69
+32-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:28:17-77
+34-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:28:27-74
+35            </intent-filter>
+36        </activity>
+37        <activity android:name="com.android.factorytest.JsonCreatorActivity" />
+37-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:31:9-57
+37-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:31:19-54
+38        <activity android:name="com.android.factorytest.MainActivity" >
+38-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:9-38:20
+38-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:19-47
+39
+40            <!-- android:label="@string/app_name" <intent-filter> -->
+41            <!-- <action android:name="android.intent.action.MAIN" /> -->
+42            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+43            <!-- </intent-filter> -->
+44        </activity>
+45        <activity android:name="com.android.factorytest.TestColor" />
+45-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:9-47
+45-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:19-44
+46        <activity android:name="com.android.factorytest.TestSd" />
+46-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:9-44
+46-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:19-41
+47        <activity android:name="com.android.factorytest.TestCamera" />
+47-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:9-48
+47-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:19-45
+48        <activity android:name="com.android.factorytest.TestWiFi" />
+48-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:9-46
+48-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:19-43
+49        <activity android:name="com.android.factorytest.TestTouch" />
+49-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:9-47
+49-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:19-44
+50        <activity android:name="com.android.factorytest.TestBluetooth" />
+50-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:9-51
+50-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:19-48
+51        <activity android:name="com.android.factorytest.TestAudioVideo" />
+51-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:9-52
+51-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:19-49
+52        <activity android:name="com.android.factorytest.TestRecord" />
+52-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:9-48
+52-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:19-45
+53        <activity android:name="com.android.factorytest.TestGpio" />
+53-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:9-46
+53-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:19-43
+54        <activity android:name="com.android.factorytest.TestFingerprint" />
+54-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:9-53
+54-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:19-50
+55        <activity android:name="com.android.factorytest.TestGsensor" />
+55-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:9-49
+55-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:19-46
+56        <activity android:name="com.android.factorytest.TestFpFlash" />
+56-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:9-49
+56-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:19-46
+57        <activity android:name="com.android.factorytest.TestUart" />
+57-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:9-46
+57-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:19-43
+58        <activity android:name="com.android.factorytest.SerialPortSet" />
+58-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:9-51
+58-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:19-48
+59        <activity
+59-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:53:9-55:65
+60            android:name="com.android.factorytest.TestFlash"
+60-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:54:13-38
+61            android:label="@string/title_activity_test_flash" />
+61-->F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:55:13-62
+62    </application>
+63
+64</manifest>

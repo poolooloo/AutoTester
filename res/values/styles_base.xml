@@ -74,17 +74,17 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="MatchMatch.Common">
-        <item name="android:background">@drawable/bk</item>
-    </style>
+<!--    <style name="MatchMatch.Common">-->
+<!--        <item name="background">@drawable/bk</item>-->
+<!--    </style>-->
 
-    <style name="MatchWrap.Common">
-        <item name="android:background">@drawable/bk</item>
-    </style>
+<!--    <style name="MatchWrap.Common">-->
+<!--        <item name="background">@drawable/bk</item>-->
+<!--    </style>-->
 
-    <style name="MatchMatch.Vertical.Common">
-        <item name="android:background">@drawable/bk</item>
-    </style>
+<!--    <style name="MatchMatch.Vertical.Common">-->
+<!--        <item name="background">@drawable/bk</item>-->
+<!--    </style>-->
 
     <style name="MatchMatch.Horizontal">
         <item name="android:orientation">horizontal</item>

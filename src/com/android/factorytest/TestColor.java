@@ -1,12 +1,11 @@
 package com.android.factorytest;
 
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -14,8 +13,10 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.TextView;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 
-public class TestColor extends Activity{
+public class TestColor extends AppCompatActivity {
 	private static final String TAG = "factorytest";
 	
 	//private Button mReturn = null;
@@ -57,7 +58,7 @@ public class TestColor extends Activity{
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case  AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -109,7 +110,7 @@ public class TestColor extends Activity{
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	 AlertDialog isExit = new  AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 
@@ -120,9 +121,9 @@ public class TestColor extends Activity{
      isExit.setMessage("测试是否成功");  
      // Ìí¼ÓÑ¡Ôñ°´Å¥²¢×¢²á¼àÌý  
 
-     isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
+     isExit.setButton( AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
-     isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
+     isExit.setButton( AlertDialog.BUTTON_NEGATIVE,"失败", listener);
      
      isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
 

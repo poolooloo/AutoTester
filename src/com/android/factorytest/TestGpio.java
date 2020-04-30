@@ -1,13 +1,6 @@
 package com.android.factorytest;
 
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.FileReader;
-
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,11 +11,15 @@ import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
 
-public class TestGpio extends Activity {
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.FileReader;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+
+public class TestGpio extends AppCompatActivity {
     private static final String TAG = "factorytest";
     private static final String procpath = "/proc/gpio_set/rp_gpio_set";
 
@@ -111,7 +108,7 @@ public class TestGpio extends Activity {
     };
     private void showAlert()
     {
-        AlertDialog isExit = new AlertDialog.Builder(this).create();
+         AlertDialog isExit = new  AlertDialog.Builder(this).create();
 
         // 设置对话框标题
 
@@ -125,9 +122,9 @@ public class TestGpio extends Activity {
 
         isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
-        isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);
+        isExit.setButton( AlertDialog.BUTTON_NEGATIVE,"失败", listener);
 
-        isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener);
+        isExit.setButton( AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
         // 显示对话框
 
@@ -367,7 +364,7 @@ public class TestGpio extends Activity {
     };
 
     private String str_cut_off(String str){
-        char[] char_str = str.toString().toCharArray();
+        char[] char_str = str.toCharArray();
         int count_line=0;
         int flag_line=0;
         String tras_str = null;
@@ -387,7 +384,7 @@ public class TestGpio extends Activity {
 
         if(2 == count_line){
             for(int j=1; j<flag_line; j++){
-                tras_str = tras_str + String.valueOf(char_str[j]);
+                tras_str = tras_str + char_str[j];
             }
 
             return tras_str;

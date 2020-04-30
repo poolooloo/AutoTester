@@ -1,11 +1,7 @@
 package com.android.factorytest;
 
-import android.app.Activity;
-import android.os.Environment;
 import android.os.Bundle;
-//import android.support.v7.app.AppCompatActivity;
-import com.alibaba.fastjson.JSON;
-//import com.google.gson.JsonObject;
+import android.os.Environment;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -16,8 +12,12 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.PrintStream;
 
+import androidx.appcompat.app.AppCompatActivity;
 
-public class JsonCreatorActivity extends Activity {
+//
+
+
+public class JsonCreatorActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

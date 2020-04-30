@@ -1,24 +1,23 @@
 package com.android.factorytest;
 
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
-import android.hardware.usb.UsbDevice;
 import android.os.Bundle;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.Context;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class TestGsensor extends Activity implements SensorEventListener{     //在继承activity类的同时使用listsen接口
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+
+public class TestGsensor extends AppCompatActivity implements SensorEventListener{     //在继承activity类的同时使用listsen接口
 	private final String TAG = "factorytest";
 	private SensorManager mSensorManager;
 	private Sensor sensor;
@@ -106,7 +105,7 @@ public class TestGsensor extends Activity implements SensorEventListener{     //
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case   AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -158,7 +157,7 @@ public class TestGsensor extends Activity implements SensorEventListener{     //
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	 AlertDialog isExit = new   AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 

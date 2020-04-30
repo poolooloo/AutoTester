@@ -1,11 +1,14 @@
 package com.android.factorytest;
 
-import android.app.Activity;
+
+
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class TestFlash extends Activity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class TestFlash extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

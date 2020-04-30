@@ -326,16 +326,12 @@ package com.android.factorytest;
 //}
 
 
-
-import java.io.ByteArrayOutputStream;
-import java.io.IOException;
-
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -345,7 +341,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
-import static android.net.wifi.SupplicantState.COMPLETED;
+import java.io.IOException;
 
 public class TestUart extends SerialPortActivity {
 	private static final String TAG = "factorytest";
@@ -923,7 +919,7 @@ public class TestUart extends SerialPortActivity {
 	};
 	private void showAlert()
 	{
-		AlertDialog isExit = new AlertDialog.Builder(this).create();
+		  AlertDialog isExit = new   AlertDialog.Builder(this).create();
 
 		// 设置对话框标题
 
@@ -935,7 +931,7 @@ public class TestUart extends SerialPortActivity {
 
 		// 添加选择按钮并注册监听
 
-		isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);
+		isExit.setButton(  AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
 		isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);
 

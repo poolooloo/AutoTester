@@ -1,14 +1,14 @@
 package com.android.factorytest;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.KeyEvent;
 
-public class TestFingerprint extends Activity {
+public class TestFingerprint extends AppCompatActivity {
 	private static final String TAG = "factorytest";
 	TestFingerprintView cp;
 	
@@ -36,7 +36,7 @@ public class TestFingerprint extends Activity {
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case   AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -55,7 +55,7 @@ public class TestFingerprint extends Activity {
 //            	}
                 break;  
 
-            case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框  
+            case   AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
             	Log.i(TAG,"失败");
             	mstate = 2;
             	Intent itfaile = new Intent();  
@@ -72,7 +72,7 @@ public class TestFingerprint extends Activity {
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case   AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -102,9 +102,9 @@ public class TestFingerprint extends Activity {
 
      isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
 
-     isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
+     isExit.setButton(  AlertDialog.BUTTON_NEGATIVE,"失败", listener);
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton(  AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // 显示对话框  
 

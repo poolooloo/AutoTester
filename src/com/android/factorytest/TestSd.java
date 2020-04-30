@@ -1,33 +1,28 @@
 package com.android.factorytest;
 
-import java.io.File;
-
-import android.app.Activity;
-import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
+import android.hardware.usb.UsbDevice;
+import android.hardware.usb.UsbManager;
 import android.os.Bundle;
-import android.os.Environment;
 import android.os.storage.StorageManager;
+ import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
-import java.lang.reflect.Array;
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import android.hardware.usb.UsbDevice;
-import android.hardware.usb.UsbManager;
-import android.content.Context;
-
-public class TestSd extends Activity 
+public class TestSd extends AppCompatActivity
 {
 	private static final String TAG = "factorytest";
 	private TextView mTestSd = null;
@@ -237,7 +232,7 @@ public class TestSd extends Activity
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case   AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -256,7 +251,7 @@ public class TestSd extends Activity
 //            	}
                 break;  
 
-            case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框  
+            case   AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
             	Log.i(TAG,"失败");
             	mstate = 2;
             	Intent itfaile = new Intent();  
@@ -273,7 +268,7 @@ public class TestSd extends Activity
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case   AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -289,7 +284,7 @@ public class TestSd extends Activity
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	 AlertDialog isExit = new   AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 
@@ -301,11 +296,11 @@ public class TestSd extends Activity
 
      // 添加选择按钮并注册监听  
 
-     isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
+     isExit.setButton(  AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
-     isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
+     isExit.setButton(  AlertDialog.BUTTON_NEGATIVE,"失败", listener);
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton(  AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // 显示对话框  
 
@@ -416,7 +411,7 @@ public class TestSd extends Activity
 								mTestSd.setTextColor(Color.GREEN);
 								OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(f));
 								String editor = "fdfd";
-								osw.write(editor.toString());
+								osw.write(editor);
 								osw.close();
 							} else {
 								Log.d(TAG, "create file failed");
@@ -480,7 +475,7 @@ public class TestSd extends Activity
 								mTestSd.setTextColor(Color.GREEN);
 								OutputStreamWriter osw = new OutputStreamWriter(new FileOutputStream(fusb));
 								String editor = "fdfd";
-								osw.write(editor.toString());
+								osw.write(editor);
 								osw.close();
 							} else {
 								Log.d(TAG, "usb create file failed");

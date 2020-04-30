@@ -2,22 +2,24 @@ package com.android.factorytest;
 
 
 import android.app.Activity;
-import android.app.AlertDialog;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.hardware.Camera;
+import android.hardware.Camera.Parameters;
 import android.os.Bundle;
 import android.provider.MediaStore;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
-import android.hardware.Camera;
-import android.hardware.Camera.Parameters;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 
-public class TestCamera extends Activity
+
+public class TestCamera extends AppCompatActivity
 {
 	
 	private static final String TAG = "factorytest";
@@ -55,7 +57,7 @@ public class TestCamera extends Activity
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case  AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -91,7 +93,7 @@ public class TestCamera extends Activity
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case  AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -107,7 +109,7 @@ public class TestCamera extends Activity
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	  AlertDialog isExit = new AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 
@@ -121,9 +123,9 @@ public class TestCamera extends Activity
 
      isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
 
-     isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
+     isExit.setButton( AlertDialog.BUTTON_NEGATIVE,"失败", listener);
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton( AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // 显示对话框  
 

@@ -1,15 +1,13 @@
 package com.android.factorytest;
 
-import android.app.Activity;
-import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-//import android.net.ConnectivityManager;
-//import android.net.wifi.WifiConfiguration;
-//import android.net.ConnectivityManager;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.provider.Settings;
+ import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.view.KeyEvent;
@@ -17,17 +15,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.net.Uri;
-import android.content.Context;
-
-import org.w3c.dom.Text;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.reflect.Method;
 
-public class TestWiFi extends Activity
+//import android.net.ConnectivityManager;
+//import android.net.wifi.WifiConfiguration;
+//import android.net.ConnectivityManager;
+
+public class TestWiFi extends AppCompatActivity
 {
 	private static final String TAG = "factorytest";
 
@@ -72,7 +69,7 @@ public class TestWiFi extends Activity
 
 			{
 
-				case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
+				case   AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
 					Log.i(TAG,"成功");
 					mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -91,7 +88,7 @@ public class TestWiFi extends Activity
 //            	}
 					break;
 
-				case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
+				case   AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
 					Log.i(TAG,"失败");
 					mstate = 2;
 					Intent itfaile = new Intent();
@@ -108,7 +105,7 @@ public class TestWiFi extends Activity
 //            	}
 					break;
 
-				case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
+				case   AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
 					Log.i(TAG,"重测");
 					mstate = 3;
 					//finish();
@@ -124,7 +121,7 @@ public class TestWiFi extends Activity
 	};
 	private void showAlert()
 	{
-		AlertDialog isExit = new AlertDialog.Builder(this).create();
+		  AlertDialog isExit = new   AlertDialog.Builder(this).create();
 
 		// 设置对话框标题
 
@@ -136,11 +133,11 @@ public class TestWiFi extends Activity
 
 		// 添加选择按钮并注册监听
 
-		isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);
+		isExit.setButton(  AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
 		isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);
 
-		isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener);
+		isExit.setButton(  AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
 		// 显示对话框
 
@@ -320,7 +317,7 @@ public class TestWiFi extends Activity
 	/**
 	 * 推断Ping 网址是否返回成功
 	 *
-	 * @param netAddress
+	 * @param  pingNum
 	 * @return
 	 */
 	public static String isPingSuccess(int pingNum, String m_strForNetAddress) {
@@ -339,12 +336,12 @@ public class TestWiFi extends Activity
 				result = "failed,exit = " + status;
 				return result;
 			}
-			String lost = new String();
-			String delay = new String();
+			String lost = "";
+			String delay = "";
 			BufferedReader buf = new BufferedReader(new InputStreamReader(p.getInputStream()));
 
 
-			String str = new String();
+			String str = "";
 // 读出全部信息并显示
 			while ((str = buf.readLine()) != null) {
 				str = str + "\r\n";

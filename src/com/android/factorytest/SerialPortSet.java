@@ -1,16 +1,17 @@
 package com.android.factorytest;
 
 
-
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
-import android.util.Log;
-public class SerialPortSet extends Activity{
+
+import androidx.appcompat.app.AppCompatActivity;
+
+public class SerialPortSet extends AppCompatActivity {
 	private static final String TAG = "factorytest";
 	public Button surebt;
 	public EditText serialportpath,serialportbaudrateinput;

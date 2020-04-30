@@ -76,14 +76,7 @@ public class GetMountPoint
 
                 boolean isMounted;
                 String getVolumeState = (String) method_getVolumeState.invoke(sm, path);//获取挂载状态。
-                if (getVolumeState.equals(Environment.MEDIA_MOUNTED))
-                {
-                    isMounted = true;
-                }
-                else
-                {
-                    isMounted = false;
-                }
+                isMounted = getVolumeState.equals(Environment.MEDIA_MOUNTED);
 
                 result.add(new MountPoint(file, isRemovable, isMounted));
             }

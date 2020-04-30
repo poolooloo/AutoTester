@@ -1,45 +1,23 @@
 package com.android.factorytest;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.OutputStreamWriter;
-
 import android.Manifest;
-import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.content.pm.PackageManager;
-import android.os.Build;
-
-import java.io.IOException;
-import java.io.StringReader;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-
-import jxl.Workbook;
-import jxl.write.Label;
-import jxl.write.WritableSheet;
-import jxl.write.WritableWorkbook;
-import jxl.write.WriteException;
-import jxl.write.biff.RowsExceededException;
-
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
+import android.os.Build;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
+//import   AppCompatActivity;
 import android.telephony.TelephonyManager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.Button;
 import android.widget.TableLayout;
 import android.widget.TextView;
 
 import com.alibaba.fastjson.JSON;
-//import com.google.gson.Gson;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -48,15 +26,32 @@ import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
-import jxl.Sheet;
-import jxl.read.biff.BiffException;
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStreamWriter;
+import java.io.StringReader;
+import java.nio.charset.StandardCharsets;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import androidx.appcompat.app.AppCompatActivity;
 import jxl.Cell;
+import jxl.Sheet;
+import jxl.Workbook;
+import jxl.read.biff.BiffException;
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+import jxl.write.WriteException;
+import jxl.write.biff.RowsExceededException;
 
-//import hei.permission.PermissionActivity;
 
-public class MainActivity extends Activity {
+
+public class MainActivity extends AppCompatActivity {
     Build bd = new Build();
-    String model = bd.MODEL;
+    String model = Build.MODEL;
 
 
     private static final String TAG = "factorytest";
@@ -141,8 +136,8 @@ public class MainActivity extends Activity {
 //	private static  String mstrgsensorresult = "noused";
 //	private static  String mstrfpflashresult = "notused";
 
-    private static String mstrarrayresult[] = new String[13];
-    private static String mstrarrayname[] = new String[13];
+    private static String[] mstrarrayresult = new String[13];
+    private static String[] mstrarrayname = new String[13];
     private static String ResultFile = "/sdcard/testresult.xls";
 
     static {
@@ -175,8 +170,7 @@ public class MainActivity extends Activity {
             // TODO 自动生成的 catch 块
             e.printStackTrace();
         }
-
-
+        
     }
 
     //解析HTML文件
@@ -315,12 +309,9 @@ public class MainActivity extends Activity {
     public void checkfile()
     {
         File fp = new File(ResultFile);
-        if(fp.exists())
-            isFileexist = true;
-        else
-            isFileexist = false;
+        isFileexist = fp.exists();
     }
-    public void initResultFile() throws RowsExceededException, WriteException
+    public void initResultFile() throws WriteException
     {
         Label lbl1;
         Label bll2;
@@ -379,7 +370,7 @@ public class MainActivity extends Activity {
             }
         }
     }
-    public void initanything() throws RowsExceededException, WriteException
+    public void initanything() throws WriteException
     {
         mstrarrayresult[0] = getResources().getString(R.string.test_result_none) ;
         mstrarrayresult[1] = getResources().getString(R.string.test_result_none);
@@ -480,7 +471,7 @@ public class MainActivity extends Activity {
             Cell c;
             Cell ct1,ct2;
             Date d1,d2 = null,dmax = null;
-            Date d[] = new Date[13];
+            Date[] d = new Date[13];
             SimpleDateFormat dataformat = new   SimpleDateFormat("yyyy-MM-dd   hh:mm:ss");
 
             for(int i = 0;i<13; i++)
@@ -998,7 +989,7 @@ public class MainActivity extends Activity {
 
                 try {
                     FileOutputStream fos=new FileOutputStream ("/sdcard/testresult.txt");
-                    OutputStreamWriter osw=new OutputStreamWriter(fos,"UTF-8");
+                    OutputStreamWriter osw=new OutputStreamWriter(fos, StandardCharsets.UTF_8);
                     //String[] strs = str.split("!");
                     osw.write("<HTML><HEAD><META content=\"IE=11.0000\"http-equiv=\"X-UA-Compatible\">\r\n");
                     osw.write("<TITLE>测试结果</TITLE>  \r\n");

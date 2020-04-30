@@ -1,7 +1,5 @@
 package com.android.factorytest;
 
-import android.app.Activity;
-import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -18,7 +16,10 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class TestBluetooth extends Activity
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+
+public class TestBluetooth extends AppCompatActivity
 {
 	private static final String TAG = "factorytest";
 	private TextView mBluetoothstate = null;
@@ -52,7 +53,7 @@ public class TestBluetooth extends Activity
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case  AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -71,7 +72,7 @@ public class TestBluetooth extends Activity
 //            	}
                 break;  
 
-            case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框  
+            case  AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
             	Log.i(TAG,"失败");
             	mstate = 2;
             	Intent itfaile = new Intent();  
@@ -88,7 +89,7 @@ public class TestBluetooth extends Activity
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case  AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -104,7 +105,7 @@ public class TestBluetooth extends Activity
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	  AlertDialog isExit = new  AlertDialog.Builder(this).create();
 
      // ÉèÖÃ¶Ô»°¿ò±êÌâ  
 
@@ -117,11 +118,11 @@ public class TestBluetooth extends Activity
 
      // 添加选择按钮并注册监听  
 
-     isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
+     isExit.setButton( AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
      isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton( AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // ÏÔÊ¾¶Ô»°¿ò  
 

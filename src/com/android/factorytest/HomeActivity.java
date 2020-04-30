@@ -1,14 +1,13 @@
 package com.android.factorytest;
 
-import android.app.Activity;
-//import android.support.v7.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class HomeActivity extends Activity {
+public class HomeActivity extends AppCompatActivity {
 
     private Intent mIntent = null;
     
@@ -23,7 +22,7 @@ public class HomeActivity extends Activity {
         btnAutoTest.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
-                mIntent =new Intent(HomeActivity.this,MainActivity.class);
+                mIntent =new Intent(HomeActivity.this,ResultActivity.class);
                 HomeActivity.this.startActivity(mIntent);
             }
         });

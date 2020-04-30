@@ -1,5 +1,19 @@
 package com.android.factorytest;
 
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioRecord;
+import android.media.AudioTrack;
+import android.media.MediaRecorder;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
 import java.io.DataInputStream;
@@ -11,24 +25,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
-import android.media.AudioFormat;
-import android.media.AudioManager;
-import android.media.AudioRecord;
-import android.media.AudioTrack;
-import android.media.MediaRecorder;
-import android.os.Bundle;
-import android.os.Environment;
-import android.widget.Button;
-import android.util.Log;
-import android.view.KeyEvent;
-import android.view.View;
-import android.view.View.OnClickListener;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
 
-public class TestRecord extends Activity {
+public class TestRecord extends AppCompatActivity {
 	private static final String TAG = "factorytest";
     private boolean isRecording = false ;
 
@@ -149,7 +149,7 @@ public class TestRecord extends Activity {
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case    AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -168,7 +168,7 @@ public class TestRecord extends Activity {
 //            	}
                 break;  
 
-            case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框  
+            case    AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
             	Log.i(TAG,"失败");
             	mstate = 2;
             	Intent itfaile = new Intent();  
@@ -185,7 +185,7 @@ public class TestRecord extends Activity {
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case    AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -201,7 +201,7 @@ public class TestRecord extends Activity {
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	    AlertDialog isExit = new    AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 
@@ -213,11 +213,11 @@ public class TestRecord extends Activity {
 
      // 添加选择按钮并注册监听  
 
-     isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
+     isExit.setButton(   AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
      isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton(   AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // 显示对话框  
 

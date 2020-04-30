@@ -1,6 +1,5 @@
 package com.android.factorytest;
 
-import android.app.Activity;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -10,11 +9,13 @@ import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 public class TestTouchView extends View {
 
 	private final String TAG = "factorytest";
 
-	private Activity mActivity;
+	private AppCompatActivity mActivity;
 
 	/**
 	 * screen's height
@@ -67,7 +68,7 @@ public class TestTouchView extends View {
 	private int[] coordinateY;
 
 	
-	public TestTouchView(Activity activity) {
+	public TestTouchView(AppCompatActivity activity) {
 		super(activity);
 		this.mActivity = activity;
 		init();

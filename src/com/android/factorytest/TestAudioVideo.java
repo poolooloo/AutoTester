@@ -1,30 +1,27 @@
 package com.android.factorytest;
 
 
-import java.io.File;
-import java.util.HashMap;
-
+import android.content.DialogInterface;
+import android.content.Intent;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.media.SoundPool;
-import android.net.Uri;
 import android.os.Bundle;
-import android.R.integer;
-import android.app.Activity;
-import android.app.AlertDialog;
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
-public class TestAudioVideo extends Activity implements OnClickListener{
+import java.util.HashMap;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AlertDialog;
+
+public class TestAudioVideo extends AppCompatActivity implements OnClickListener{
 	private static final String TAG = "factorytest";
 	//private static final String PATH_STRING = "/storage/external_storage/sdcard1/test.mp4";
 	private static final String PATH_STRING = "file:///android_asset/wow.mp4";
@@ -92,7 +89,7 @@ public class TestAudioVideo extends Activity implements OnClickListener{
 
             {  
 
-            case AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序  
+            case     AlertDialog.BUTTON_POSITIVE:// "成功"按钮退出程序
             	Log.i(TAG,"成功");
             	mstate = 1;
 //            	mextras.putBoolean("sucess", true);
@@ -111,7 +108,7 @@ public class TestAudioVideo extends Activity implements OnClickListener{
 //            	}
                 break;  
 
-            case AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框  
+            case     AlertDialog.BUTTON_NEGATIVE:// "失败"第二个按钮取消对话框
             	Log.i(TAG,"失败");
             	mstate = 2;
             	Intent itfaile = new Intent();  
@@ -128,7 +125,7 @@ public class TestAudioVideo extends Activity implements OnClickListener{
 //            	}
                 break;  
             
-            case AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框  
+            case     AlertDialog.BUTTON_NEUTRAL:// "重测"第二个按钮取消对话框
             	Log.i(TAG,"重测");
             	mstate = 3;
             	//finish();
@@ -146,7 +143,7 @@ public class TestAudioVideo extends Activity implements OnClickListener{
     };    
  private void showAlert()
  {
-	 AlertDialog isExit = new AlertDialog.Builder(this).create();  
+	 AlertDialog isExit = new     AlertDialog.Builder(this).create();
 
      // 设置对话框标题  
 
@@ -158,11 +155,11 @@ public class TestAudioVideo extends Activity implements OnClickListener{
 
      // 添加选择按钮并注册监听  
 
-     isExit.setButton(AlertDialog.BUTTON_POSITIVE,"成功", listener);  
+     isExit.setButton(    AlertDialog.BUTTON_POSITIVE,"成功", listener);
 
-     isExit.setButton(AlertDialog.BUTTON_NEGATIVE,"失败", listener);  
+     isExit.setButton(    AlertDialog.BUTTON_NEGATIVE,"失败", listener);
      
-     isExit.setButton(AlertDialog.BUTTON_NEUTRAL,"重测", listener); 
+     isExit.setButton(    AlertDialog.BUTTON_NEUTRAL,"重测", listener);
 
      // 显示对话框  
 
