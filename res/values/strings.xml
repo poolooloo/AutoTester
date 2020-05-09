@@ -34,6 +34,7 @@
     <string name="test_usb_mess5">在U盘中创建文件失败！</string>
     <string name="test_usb_mess6">从U盘中删除文件失败！</string>
     <string name="test_color_mess">请点击“改变颜色”，显示是否正常！</string>
+    <string name="test_color_auto">请观察颜色变化是否显示正常！</string>
     <string name="test_camera_mess">请点击“打开Camera”，测试Camera是否正常！</string>
     <string name="test_wifi_mess">请点击各个按钮,打开或关闭WIFI/以太网/4G的功能,测试过程中关闭非测试项的功能！</string>
     <string name="test_wifi_state">WIFI状态</string>
@@ -149,4 +150,11 @@
     <string name="strManualTest">手动测试</string>
     <string name="wordcount">字数</string>
     <string name="phonePermission">手机状态权限</string>
+    <string name="lastTestTime">测试结果</string>
+    <string name="strExit">退出</string>
+    <string name="strExportResult">导出结果</string>
+    <string name="lcd_retest">重测</string>
+    <string name="lcd_success">成功</string>
+    <string name="lcd_failure">失败</string>
+    <string name="lcd_prompt_message">测试是否成功？</string>
 </resources>

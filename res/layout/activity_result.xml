@@ -1,9 +1,326 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ResultActivity">
 
-</androidx.constraintlayout.ConstraintLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:text="@string/lastTestTime"></TextView>
+
+        <TextView
+            android:id="@+id/lasttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"></TextView>
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/TableRow2"
+                android:layout_width="80dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_colorresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_colorresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowsd"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:textSize="12sp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_sdresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_sdresult"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowcamera"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:textSize="12sp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_cameraresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_cameraresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowwifi"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:textSize="12sp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_wifiresult_name"
+                    android:textSize="12dp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_wifiresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowbt"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_btresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_btresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowtouch"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_touchresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_touchresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowgpio"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="79dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_gpioresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_gpioresult"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_avresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_avresult"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowrecord"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_recordresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_recordresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowfp"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_fpresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_fpresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowgsensor"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_gsensorresult_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_gsensorresult"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowfpflash"
+                android:layout_width="80dp"
+                android:layout_height="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/test_fpflash_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_fpflashresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12sp"></TextView>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRowuart"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:textSize="12sp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:text="@string/test_uart_name"
+                    android:textSize="12sp"></TextView>
+
+                <TextView
+                    android:id="@+id/test_uartresult"
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:textSize="12dp"></TextView>
+            </TableRow>
+
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:id="@+id/TableImporttxt"
+                android:layout_width="80dp"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:id="@+id/wordcount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/wordcount"
+                    android:textSize="15dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/exit"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp">
+
+            </TableRow>
+
+            <Button
+                android:id="@+id/test_exit"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/strExit"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/test_export"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="@string/strExportResult"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -937,6 +937,27 @@ jint Java_com_android_factorytest_MainActivity_ReadAdc(JNIEnv* env,jobject thiz)
     LOGE("Java_com_android_factorytest_MainActivity_ReadAdc:ReadAdc=%d", buf);
     return buf;
 }
+
+jint Java_com_android_factorytest_ResultActivity_ReadAdc(JNIEnv* env,jobject thiz)
+{
+    int dev;
+    unsigned int buf;
+
+    dev = open("/dev/adc_test",O_RDONLY);
+    if (dev == -1)
+    {
+        /* Throw an exception */
+        LOGE("Cannot open port %s",strerror (errno));
+        /* TODO: throw an exception */
+//        return NULL;
+        return 0;
+    }
+    //LOGE("Java_com_android_factorytest_MainActivity_ReadAdc:ReadAdc=%d", buf);
+    read(dev,&buf,1);
+    LOGE("Java_com_android_factorytest_MainActivity_ReadAdc:ReadAdc=%d", buf);
+    return buf;
+}
+
 jint JNICALL Java_com_grest_can_1485_TestRS485_1CAN_CANSend()
 {
     int s, nbytes, i;

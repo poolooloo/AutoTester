@@ -259,15 +259,17 @@ public class MainActivity extends AppCompatActivity {
         final TelephonyManager tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         final StringBuilder sb = new StringBuilder();
 
-        if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    Activity#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for Activity#requestPermissions for more details.
-            return;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            if (checkSelfPermission(Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    Activity#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for Activity#requestPermissions for more details.
+                return;
+            }
         }
         sb.append("\nDeviceId(IMEI) = " + tm.getDeviceId());
         /*sb.append("\nDeviceSoftwareVersion = " + tm.getDeviceSoftwareVersion());
@@ -557,7 +559,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
+    
     protected void onActivityResult(int requestCode, int resultCode, Intent data)
     {
         switch (requestCode)
@@ -913,6 +915,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
 
         }
+        super.onActivityResult(requestCode,resultCode,data);
+
     }
     private void initText()
     {

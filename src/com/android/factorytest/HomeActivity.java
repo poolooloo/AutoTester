@@ -22,6 +22,8 @@ public class HomeActivity extends AppCompatActivity {
         btnAutoTest.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                final GlobalData globalData = (GlobalData)getApplication();
+                globalData.setAutoRunFlag(true);
                 mIntent =new Intent(HomeActivity.this,ResultActivity.class);
                 HomeActivity.this.startActivity(mIntent);
             }
@@ -30,6 +32,8 @@ public class HomeActivity extends AppCompatActivity {
         final Button btnManualTest = findViewById(R.id.btnManualTest);
         btnManualTest.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
+                final GlobalData globalData = (GlobalData)getApplication();
+                globalData.setAutoRunFlag(false);
                 mIntent =new Intent(HomeActivity.this,MainActivity.class);
                 HomeActivity.this.startActivity(mIntent);
 

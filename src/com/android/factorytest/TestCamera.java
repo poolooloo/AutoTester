@@ -15,6 +15,8 @@ import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AlertDialog;
 
@@ -42,7 +44,18 @@ public class TestCamera extends AppCompatActivity
 	{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.test_camera);
-		initView();
+		
+		mReturn = (Button)findViewById(R.id.but_return);
+		mChangeCamera = (Button)findViewById(R.id.but_changecamera);
+		mRecord = (Button)findViewById(R.id.but_record);
+		
+		final GlobalData globalData = (GlobalData) getApplication();
+		if( globalData.getAutoRunFlag() ){
+			testCamera();
+		}else{
+			initView();
+		}
+
 		RegListener();
 	}
 	DialogInterface.OnClickListener listener = new DialogInterface.OnClickListener()  
@@ -160,14 +173,21 @@ public class TestCamera extends AppCompatActivity
 				((Activity) arg0).finish();  				
 			}  	
 	} 
-
+	private void testCamera()
+	{
+		setTitle("摄像头测试");
+		Toast.makeText(getBaseContext(),"开始测试摄像...",Toast.LENGTH_LONG).show();
+		mIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		startActivityForResult(mIntent,TAKE_PICTURE);
+		
+		Toast.makeText(getBaseContext(),"开始测试录像...",Toast.LENGTH_LONG).show();
+		mIntent = new Intent(MediaStore.ACTION_VIDEO_CAPTURE );
+		startActivityForResult(mIntent,TAKE_PICTURE);
+	}
 	private void initView()
 	{
 		Log.d(TAG,"initView");
 		setTitle(R.string.test_camera_mess);
-		mReturn = (Button)findViewById(R.id.but_return);
-		mChangeCamera = (Button)findViewById(R.id.but_changecamera);
-		mRecord = (Button)findViewById(R.id.but_record);
 //		mTorch = (Button)findViewById(R.id.but_torch);
 //		mTorch_off = (Button)findViewById(R.id.but_torch_off);
 //		mTorch_off.setEnabled(false);

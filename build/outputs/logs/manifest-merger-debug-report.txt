@@ -1,8 +1,8 @@
 -- Merging decision tree log ---
 manifest
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-58:12
-INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-58:12
-INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-58:12
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-60:12
+INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-60:12
+INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-60:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\6119d746697059b7e1b74aab4d181f56\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\0362ff4d8672321347a402c32368f192\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -24,8 +24,8 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\dell\.android\ma
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\63647da4654da12a6f2785cfbbad8123\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\733fc1d306cee2c05d3e1fb0b7527020\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\fdd65d8b6066fd289a68b42931dc03a2\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-58:12
-INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-58:12
+INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-60:12
+INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:2:1-60:12
 	package
 		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:4:5-38
 	android:versionName
@@ -77,7 +77,7 @@ ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:16:5-71
 	android:name
 		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:16:22-68
 application
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:18:5-56:19
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:18:5-58:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\3ec6fa8458ddbe732478393a9f9e6c77\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:5-89
@@ -87,101 +87,103 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\de
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\dell\.android\manual-offline-m2\caches\transforms-2\files-2.1\e9dab9c67c1ee3668e0bbf86c6d8cbd8\core-1.1.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:21:9-41
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:22:9-41
 	android:icon
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:20:9-45
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:21:9-45
 	android:allowBackup
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:19:9-35
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:20:9-35
 	android:theme
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:22:9-40
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:9-40
+	android:name
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:19:9-35
 activity#com.android.factorytest.ResultActivity
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:9-61
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:9-61
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:23:19-49
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:19-49
 activity#com.android.factorytest.HomeActivity
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:9-30:20
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:25:9-31:20
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:24:19-47
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:25:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:25:13-29:29
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:13-30:29
 action#android.intent.action.MAIN
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:17-69
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:27:17-69
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:26:25-66
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:27:25-66
 category#android.intent.category.LAUNCHER
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:28:17-77
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:29:17-77
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:28:27-74
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:29:27-74
 activity#com.android.factorytest.JsonCreatorActivity
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:31:9-57
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:9-57
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:31:19-54
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:19-54
 activity#com.android.factorytest.MainActivity
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:9-38:20
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:33:9-39:20
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:32:19-47
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:33:19-47
 activity#com.android.factorytest.TestColor
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:9-47
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:9-47
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:39:19-44
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:19-44
 activity#com.android.factorytest.TestSd
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:9-44
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:9-44
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:40:19-41
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:19-41
 activity#com.android.factorytest.TestCamera
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:9-48
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:9-48
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:41:19-45
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:19-45
 activity#com.android.factorytest.TestWiFi
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:9-46
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:9-46
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:42:19-43
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:19-43
 activity#com.android.factorytest.TestTouch
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:9-47
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:9-47
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:43:19-44
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:19-44
 activity#com.android.factorytest.TestBluetooth
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:9-51
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:9-51
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:44:19-48
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:19-48
 activity#com.android.factorytest.TestAudioVideo
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:9-52
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:9-52
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:45:19-49
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:19-49
 activity#com.android.factorytest.TestRecord
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:9-48
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:9-48
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:46:19-45
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:19-45
 activity#com.android.factorytest.TestGpio
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:9-46
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:9-46
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:47:19-43
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:19-43
 activity#com.android.factorytest.TestFingerprint
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:9-53
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:9-53
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:48:19-50
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:19-50
 activity#com.android.factorytest.TestGsensor
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:9-49
-	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:49:19-46
-activity#com.android.factorytest.TestFpFlash
 ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:9-49
 	android:name
 		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:50:19-46
+activity#com.android.factorytest.TestFpFlash
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:9-49
+	android:name
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:19-46
 activity#com.android.factorytest.TestUart
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:9-46
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:9-46
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:51:19-43
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:19-43
 activity#com.android.factorytest.SerialPortSet
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:9-51
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:53:9-51
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:52:19-48
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:53:19-48
 activity#com.android.factorytest.TestFlash
-ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:53:9-55:65
+ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:54:9-56:65
 	android:label
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:55:13-62
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:56:13-62
 	android:name
-		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:54:13-38
+		ADDED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml:55:13-38
 uses-sdk
 INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from F:\AndroidStudioProjects\AutoTester\AndroidManifest.xml
